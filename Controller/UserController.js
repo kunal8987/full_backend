@@ -84,4 +84,4 @@ const loginUser = async (req, res) => {
     }
 };
 
-module.exports = { addUser, loginUser };
+export { addUser, loginUser };
