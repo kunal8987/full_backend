@@ -13,7 +13,7 @@ const mongoose = require("mongoose");
 const menuItemSchema = new mongoose.Schema({
     name: { type: String, required: true },
     description: { type: String, default: "" },
-    category: { type: String, enum: ["coffee", "desserts", "beverages"] },
+    category: { type: String, enum: ["coffee","burger","fries", "desserts", "beverages"] },
     imageUrl: { type: String, match: /^https?:\/\/.+/ },
 });
 
